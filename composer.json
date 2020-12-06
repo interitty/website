@@ -1,0 +1,29 @@
+{
+    "name": "interitty/website",
+    "description": "Source code of the Interitty project website",
+    "keywords": ["interitty"],
+    "type": "project",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Pavel Železný",
+            "email": "pavel.zelezny@interitty.org"
+        }
+    ],
+    "require": {
+        "php": "~8.0",
+        "dg/composer-cleaner": "~2.2"
+    },
+    "require-dev": {
+        "interitty/code-checker": "~1.0"
+    },
+    "config": {
+        "classmap-authoritative": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    }
+}
