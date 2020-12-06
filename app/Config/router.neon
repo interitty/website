@@ -1,0 +1,6 @@
+services:
+    RouterFactory:
+        class: Interitty\Website\Router\RouterFactory
+
+    routing.router:
+        factory: @RouterFactory::create()

@@ -1,0 +1,22 @@
+application:
+    errorPresenter: 'Error'
+    scanDirs: false
+    mapping:
+        *: 'Interitty\Website\*Module\Presenters\*Presenter'
+
+includes:
+    - router.neon
+    - config.local.neon
+
+parameters:
+
+php:
+    date.timezone: 'Europe/Prague'
+
+session:
+    expiration: '14 days'
+
+services:
+
+tracy:
+    strictMode: true

@@ -12,10 +12,27 @@
     ],
     "require": {
         "php": "~8.0",
-        "dg/composer-cleaner": "~2.2"
+        "dg/composer-cleaner": "~2.2",
+        "interitty/utils": "~1.0",
+        "latte/latte": "~2.9",
+        "nette/application": "~3.0",
+        "nette/bootstrap": "~3.0",
+        "nette/caching": "~3.0",
+        "nette/di": "~3.0",
+        "nette/finder": "~2.5",
+        "nette/forms": "~3.0",
+        "nette/http": "~3.0",
+        "nette/mail": "~3.1",
+        "nette/security": "~3.0",
+        "tracy/tracy": "~2.7"
     },
     "require-dev": {
         "interitty/code-checker": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Interitty\\Website\\": "app/"
+        }
     },
     "config": {
         "classmap-authoritative": true,
