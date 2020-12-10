@@ -13,6 +13,7 @@ assetsManager:
 
 extensions:
     assetsManager: Interitty\AssetsManager\Nette\DI\AssetsManagerExtension
+    staticContentGenerator: Interitty\StaticContentGenerator\Nette\DI\StaticContentGeneratorExtension
     translation: Contributte\Translation\DI\TranslationExtension
 
 includes:
@@ -28,6 +29,10 @@ session:
     expiration: '14 days'
 
 services:
+
+staticContentGenerator:
+    autoStart: true
+    destination: %wwwDir%
 
 tracy:
     strictMode: true

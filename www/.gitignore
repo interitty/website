@@ -1,0 +1,6 @@
+*
+!.gitignore
+!assets/*
+!favicon.ico
+!index.php
+!robots.txt

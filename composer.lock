@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "413452fef81b9e9d7bb91680da1192c2",
+    "content-hash": "bd364260a73068363c6c5a69cef96519",
     "packages": [
         {
             "name": "contributte/translation",
@@ -280,6 +280,146 @@
             "time": "2020-12-06T13:05:02+01:00"
         },
         {
+            "name": "interitty/output-buffer-manager",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:interitty/output-buffer-manager.git",
+                "reference": "04f65864ddc320c56a6a97399872ae5a8a62e3f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/interitty%2Foutput-buffer-manager/repository/archive.zip?sha=04f65864ddc320c56a6a97399872ae5a8a62e3f0",
+                "reference": "04f65864ddc320c56a6a97399872ae5a8a62e3f0",
+                "shasum": ""
+            },
+            "require": {
+                "dg/composer-cleaner": "~2.2",
+                "interitty/di": "~1.0",
+                "interitty/utils": "~1.0",
+                "php": "~8.0"
+            },
+            "require-dev": {
+                "interitty/code-checker": "~1.0",
+                "interitty/phpunit": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "cleaner-ignore": {
+                    "phpunit/phpunit": [
+                        "phpunit.xsd",
+                        "schema"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Interitty\\OutputBufferManager\\": [
+                        "src/OutputBufferManager"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Interitty\\": [
+                        "tests"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Železný",
+                    "email": "pavel.zelezny@interitty.org"
+                }
+            ],
+            "description": "Output buffer manager bring safe way for work with outputs.",
+            "keywords": [
+                "interitty"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/7298052/issues"
+            },
+            "time": "2020-12-06T13:53:34+01:00"
+        },
+        {
+            "name": "interitty/static-content-generator",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:interitty/static-content-generator.git",
+                "reference": "18d8dc60d387d5e52c70bedfbb130e71d67e36cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/interitty%2Fstatic-content-generator/repository/archive.zip?sha=18d8dc60d387d5e52c70bedfbb130e71d67e36cf",
+                "reference": "18d8dc60d387d5e52c70bedfbb130e71d67e36cf",
+                "shasum": ""
+            },
+            "require": {
+                "dg/composer-cleaner": "~2.2",
+                "interitty/output-buffer-manager": "~1.0",
+                "interitty/utils": "~1.0",
+                "league/flysystem": "~2.0",
+                "php": "~8.0"
+            },
+            "require-dev": {
+                "interitty/code-checker": "~1.0",
+                "interitty/di": "~1.0",
+                "interitty/phpunit": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "cleaner-ignore": {
+                    "phpunit/phpunit": [
+                        "phpunit.xsd",
+                        "schema"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Interitty\\StaticContentGenerator\\": [
+                        "src/StaticContentGenerator"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Interitty\\": [
+                        "tests"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Železný",
+                    "email": "pavel.zelezny@interitty.org"
+                }
+            ],
+            "description": "Static content generator persists application output for future use, save time and money.",
+            "keywords": [
+                "cache",
+                "interitty",
+                "nette"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/7206446/issues"
+            },
+            "time": "2020-12-06T15:09:04+01:00"
+        },
+        {
             "name": "interitty/utils",
             "version": "v1.0.4",
             "source": {
@@ -443,6 +583,145 @@
                 "source": "https://github.com/nette/latte/tree/v2.9.1"
             },
             "time": "2020-11-24T00:57:37+00:00"
+        },
+        {
+            "name": "league/flysystem",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "88ab4780a5cc573fb943c8a6987da880b3ec0474"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/88ab4780a5cc573fb943c8a6987da880b3ec0474",
+                "reference": "88ab4780a5cc573fb943c8a6987da880b3ec0474",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "league/mime-type-detection": "^1.0.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "conflict": {
+                "guzzlehttp/ringphp": "<1.1.1"
+            },
+            "require-dev": {
+                "async-aws/s3": "^1.5",
+                "async-aws/simple-s3": "^1.0",
+                "aws/aws-sdk-php": "^3.132.4",
+                "composer/semver": "^3.0",
+                "ext-fileinfo": "*",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "google/cloud-storage": "^1.23",
+                "phpseclib/phpseclib": "^2.0",
+                "phpstan/phpstan": "^0.12.26",
+                "phpunit/phpunit": "^8.5 || ^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "File storage abstraction for PHP",
+            "keywords": [
+                "WebDAV",
+                "aws",
+                "cloud",
+                "file",
+                "files",
+                "filesystem",
+                "filesystems",
+                "ftp",
+                "s3",
+                "sftp",
+                "storage"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/flysystem/issues",
+                "source": "https://github.com/thephpleague/flysystem/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://offset.earth/frankdejonge",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-24T14:30:57+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "353f66d7555d8a90781f6f5e7091932f9a4250aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/353f66d7555d8a90781f6f5e7091932f9a4250aa",
+                "reference": "353f66d7555d8a90781f6f5e7091932f9a4250aa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.36",
+                "phpunit/phpunit": "^8.5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "support": {
+                "issues": "https://github.com/thephpleague/mime-type-detection/issues",
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-18T11:50:25+00:00"
         },
         {
             "name": "nette/application",

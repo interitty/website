@@ -15,6 +15,7 @@
         "contributte/translation": "~0.8",
         "dg/composer-cleaner": "~2.2",
         "interitty/assets-manager": "~1.0",
+        "interitty/static-content-generator": "~1.0",
         "interitty/utils": "~1.0",
         "latte/latte": "~2.9",
         "nette/application": "~3.0",
