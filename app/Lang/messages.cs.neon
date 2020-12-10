@@ -1,0 +1,17 @@
+'Interitty': 'Interitty'
+'Interitty project website': 'Internetová prezentace projektu Interitty'
+
+# Flash messages
+'Unsupported locale "%wrongLocale%" given.': 'Požadován nepodporovaný jazyk „%wrongLocale%“.'
+
+# Error pages
+'Access Denied': 'Přístup odepřen'
+'You do not have permission to view this page. Please try contact the web site administrator if you believe you should be able to view this page.': 'Nemáte oprávnění k zobrazení této stránky. Pokud se domníváte, že byste měli tuto stránku zobrazit, zkuste se obrátit na správce webu.'
+'Page Not Found': 'Stránka nenalezena'
+'The page you requested could not be found. It is possible that the address is incorrect, or that the page no longer exists. Please use a search engine to find what you are looking for.': 'Stránka, kterou požadujete, nebyla nalezena. Je možné, že adresa je nesprávná nebo že stránka již neexistuje. Použijte vyhledávač k nalezení toho, co hledáte.'
+'Method Not Allowed': 'Metoda není povolena'
+'The requested method is not allowed for the URL.': 'Požadovaná metoda není povolena pro zadanou URL adresu.'
+'The page you requested has been taken off the site. We apologize for the inconvenience.': 'Požadovaná stránka byla odebrána z webu. Omlouváme se za nepříjemnosti.'
+'Oops': 'Jejda'
+'Your browser sent a request that this server could not understand or process.': 'Váš prohlížeč odeslal požadavek, kterému tento server nerozumí nebo jej nedokáže zpracovat.'
+'error %errorNumber%': 'chyba %errorNumber%'

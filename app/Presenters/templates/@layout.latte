@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="{=$control->getTranslator()->getLocale()}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-
-        <title>{ifset title}{include title|stripHtml} | {/ifset}Interitty</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{_'Interitty project website'}">
+        <meta name="author" content="Pavel Železný <pavel.zelezny@interitty.org>">
+        <meta name="robots" content="index,follow">
+        <meta name="geo.country" content="CZ">
+        <meta name="resource-type" content="document">
+        <link rel="index" href="{$baseUrl}" type="text/html">
+        <link rel="shortcut icon" href="{$baseUrl}/favicon.ico" type="image/x-icon">
+        <title>{ifset title}{include title|stripHtml} | {/ifset}{_'Interitty'}</title>
     </head>
 
     <body>
         <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
-            {$flash->message}
+            {_$flash->message, $flash->parameters}
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <h1>{_'Interitty'}</h1>
+            </div>
         </div>
 
         {include content}

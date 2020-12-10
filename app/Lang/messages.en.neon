@@ -1,0 +1,17 @@
+'Interitty': 'Interitty'
+'Interitty project website': 'Interitty project website'
+
+# Flash messages
+'Unsupported locale "%wrongLocale%" given.': 'Unsupported locale "%wrongLocale%" given.'
+
+# Error pages
+'Access Denied': 'Access Denied'
+'You do not have permission to view this page. Please try contact the web site administrator if you believe you should be able to view this page.': 'You do not have permission to view this page. Please try contact the web site administrator if you believe you should be able to view this page.'
+'Page Not Found': 'Page Not Found'
+'The page you requested could not be found. It is possible that the address is incorrect, or that the page no longer exists. Please use a search engine to find what you are looking for.': 'The page you requested could not be found. It is possible that the address is incorrect, or that the page no longer exists. Please use a search engine to find what you are looking for.'
+'Method Not Allowed': 'Method Not Allowed'
+'The requested method is not allowed for the URL.': 'The requested method is not allowed for the URL.'
+'The page you requested has been taken off the site. We apologize for the inconvenience.': 'The page you requested has been taken off the site. We apologize for the inconvenience.'
+'Oops': 'Oops'
+'Your browser sent a request that this server could not understand or process.': 'Your browser sent a request that this server could not understand or process.'
+'error %errorNumber%': 'error %errorNumber%'

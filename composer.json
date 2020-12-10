@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": "~8.0",
+        "contributte/translation": "~0.8",
         "dg/composer-cleaner": "~2.2",
         "interitty/utils": "~1.0",
         "latte/latte": "~2.9",

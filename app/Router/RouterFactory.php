@@ -18,7 +18,11 @@ class RouterFactory
     public function create()
     {
         $router = new RouteList();
-        $router[] = new Route('<presenter>/<action>', [
+        $router[] = new Route('<locale>/<presenter>/<action>', [
+            'locale' => [
+                Route::PATTERN => '[a-z]{2}',
+                Route::VALUE => null,
+            ],
             'presenter' => 'Homepage',
             'action' => 'default',
         ]);

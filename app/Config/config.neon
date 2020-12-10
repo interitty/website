@@ -4,6 +4,9 @@ application:
     mapping:
         *: 'Interitty\Website\*Module\Presenters\*Presenter'
 
+extensions:
+    translation: Contributte\Translation\DI\TranslationExtension
+
 includes:
     - router.neon
     - config.local.neon
@@ -20,3 +23,15 @@ services:
 
 tracy:
     strictMode: true
+
+translation:
+    locales:
+        whitelist: [cs, en]
+        default: cs
+        fallback: [cs]
+    dirs:
+        - %appDir%/Lang
+    localeResolvers:
+        - Contributte\Translation\LocalesResolvers\Header
+        - Contributte\Translation\LocalesResolvers\Parameter
+
