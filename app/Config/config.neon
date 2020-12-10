@@ -4,7 +4,15 @@ application:
     mapping:
         *: 'Interitty\Website\*Module\Presenters\*Presenter'
 
+assetsManager:
+    assetBasePath: /assets/
+    cache: true
+    manifestPath: %wwwDir%/assets/manifest.json
+#   productionMode: %productionMode%
+#   wwwDir: %wwwDir%
+
 extensions:
+    assetsManager: Interitty\AssetsManager\Nette\DI\AssetsManagerExtension
     translation: Contributte\Translation\DI\TranslationExtension
 
 includes:

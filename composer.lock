@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a79cfa64aadd1e18acc5737cb3d53b79",
+    "content-hash": "413452fef81b9e9d7bb91680da1192c2",
     "packages": [
         {
             "name": "contributte/translation",
@@ -134,6 +134,150 @@
                 "source": "https://github.com/dg/composer-cleaner/tree/v2.2"
             },
             "time": "2020-10-27T13:01:26+00:00"
+        },
+        {
+            "name": "interitty/assets-manager",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:interitty/assets-manager.git",
+                "reference": "88e37b116b6dcbedabadc8e8b52c41ec9760d394"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/interitty%2Fassets-manager/repository/archive.zip?sha=88e37b116b6dcbedabadc8e8b52c41ec9760d394",
+                "reference": "88e37b116b6dcbedabadc8e8b52c41ec9760d394",
+                "shasum": ""
+            },
+            "require": {
+                "dg/composer-cleaner": "~2.2",
+                "interitty/di": "~1.0",
+                "interitty/utils": "~1.0",
+                "nette/caching": "~3.0",
+                "php": "~8.0"
+            },
+            "require-dev": {
+                "interitty/code-checker": "~1.0",
+                "interitty/phpunit": "~1.0",
+                "latte/latte": "~2.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "cleaner-ignore": {
+                    "phpunit/phpunit": [
+                        "phpunit.xsd",
+                        "schema"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Interitty\\AssetsManager\\": [
+                        "src/AssetsManager"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Interitty\\": [
+                        "tests"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Železný",
+                    "email": "pavel.zelezny@interitty.org"
+                }
+            ],
+            "description": "Manager with Latte macro that helps to properly load CSS/JS assets.",
+            "keywords": [
+                "css",
+                "gulp",
+                "interitty",
+                "js",
+                "latte",
+                "nette",
+                "sass"
+            ],
+            "time": "2020-12-06T13:15:05+01:00"
+        },
+        {
+            "name": "interitty/di",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:interitty/di.git",
+                "reference": "b7da03683c39b5ca88a1efd0a8ca1843e70d1e62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/interitty%2Fdi/repository/archive.zip?sha=b7da03683c39b5ca88a1efd0a8ca1843e70d1e62",
+                "reference": "b7da03683c39b5ca88a1efd0a8ca1843e70d1e62",
+                "shasum": ""
+            },
+            "require": {
+                "dg/composer-cleaner": "~2.2",
+                "nette/di": "~3.0",
+                "php": "~8.0"
+            },
+            "require-dev": {
+                "interitty/code-checker": "~1.0",
+                "interitty/phpunit": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "cleaner-ignore": {
+                    "phpunit/phpunit": [
+                        "phpunit.xsd",
+                        "schema"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Interitty\\DI\\": [
+                        "src/DI"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Interitty\\": [
+                        "tests"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Železný",
+                    "email": "pavel.zelezny@interitty.org"
+                }
+            ],
+            "description": "Provides some additional features into the great Nette\\DI container.",
+            "keywords": [
+                "di",
+                "dic",
+                "interitty",
+                "ioc",
+                "nette"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/9567194/issues"
+            },
+            "time": "2020-12-06T13:05:02+01:00"
         },
         {
             "name": "interitty/utils",

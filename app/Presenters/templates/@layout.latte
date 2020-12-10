@@ -11,22 +11,27 @@
         <link rel="index" href="{$baseUrl}" type="text/html">
         <link rel="shortcut icon" href="{$baseUrl}/favicon.ico" type="image/x-icon">
         <title>{ifset title}{include title|stripHtml} | {/ifset}{_'Interitty'}</title>
+        <link rel="stylesheet" href="{assets css/interitty.css}">
     </head>
 
     <body>
-        <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
-            {_$flash->message, $flash->parameters}
-        </div>
-        <div class="header clearfix">
-            <div class="container">
+        <header>
+            <div>
                 <h1>{_'Interitty'}</h1>
             </div>
-        </div>
+        </header>
+        <main>
+            <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
+                {_$flash->message, $flash->parameters}
+            </div>
 
-        {include content}
-
+            {include content}
+        </main>
+        <footer n:ifset="footer">
+            {include footer}
+        </footer>
         {block scripts}
-        <script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+        <script src="{assets js/interitty.js}"></script>
         {/block}
     </body>
 </html>

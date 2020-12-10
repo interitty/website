@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+%container {
+    @include make-container();
+    @include make-container-max-widths();
+}
+
+header {
+    @include clearfix();
+    > div {
+        @extend %container;
+    }
+}
